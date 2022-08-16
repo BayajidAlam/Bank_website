@@ -25,6 +25,7 @@ document.getElementById('btn-deposite').addEventListener('click',function(){
   balanceTotalElement.innerText =  currentBalanceTotal;
   depositeField.value = '';
 })
+
 // clear deposite field
 
 
