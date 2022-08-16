@@ -3,6 +3,7 @@ document.getElementById('btn-deposite').addEventListener('click',function(){
   const depositeField = document.getElementById('deposite-field');
   const newDepositeAmmountString = depositeField.value;
   const newDepositeAmmount = parseFloat(newDepositeAmmountString);
+  depositeField.value = '';
   
   if(isNaN(newDepositeAmmount)){
     alert('please input deposite ammount on number!')
@@ -27,7 +28,6 @@ document.getElementById('btn-deposite').addEventListener('click',function(){
   const currentBalanceTotal = previousbalanceTotal + newDepositeAmmount;
 
   balanceTotalElement.innerText =  currentBalanceTotal;
-  depositeField.value = '';
 })
 
 // clear deposite field
