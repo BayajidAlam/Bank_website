@@ -4,6 +4,10 @@ document.getElementById('btn-deposite').addEventListener('click',function(){
   const newDepositeAmmountString = depositeField.value;
   const newDepositeAmmount = parseFloat(newDepositeAmmountString);
   
+  if(isNaN(newDepositeAmmount)){
+    alert('please input deposite ammount on number!')
+    return;
+  }
   // deposite screen
   const depositeTotalElement = document.getElementById('deposite-total');
   const PreviousDepositeTotalString = depositeTotalElement.innerText;
